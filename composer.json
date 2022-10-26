@@ -1,0 +1,21 @@
+{
+    "name": "fsa/shcc-framework",
+    "description": "Smart Home Framework",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sergei Fedotov",
+            "email": "fsa@tavda.info"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "FSA\\SmartHome\\": "classes/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "fsa/neuron-framework": "^0.4.1"
+    }
+}

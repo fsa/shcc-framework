@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c21ddea68a852de5fef7c9d425d5574b",
+    "packages": [
+        {
+            "name": "fsa/neuron-framework",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fsa/php-neuron-framework.git",
+                "reference": "99ddc09d56fd0fedb6ca2b38471d1661185dcd3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fsa/php-neuron-framework/zipball/99ddc09d56fd0fedb6ca2b38471d1661185dcd3d",
+                "reference": "99ddc09d56fd0fedb6ca2b38471d1661185dcd3d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-redis": "*",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FSA\\Neuron\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sergei Fedotov",
+                    "email": "fsa@tavda.info"
+                }
+            ],
+            "description": "Neuron PHP framework",
+            "support": {
+                "issues": "https://github.com/fsa/php-neuron-framework/issues",
+                "source": "https://github.com/fsa/php-neuron-framework/tree/v0.4.1"
+            },
+            "time": "2022-10-25T12:07:03+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
