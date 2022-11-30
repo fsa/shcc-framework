@@ -5,7 +5,6 @@ namespace FSA\SmartHome;
 use FSA\SmartHome\Entity\Sensor;
 use FSA\SmartHome\Sensors;
 use PDO;
-use SmartHome;
 
 class SensorDatabase
 {
@@ -27,13 +26,12 @@ class SensorDatabase
     {
         $entity = get_object_vars($sensor);
         if ($id) {
-            return $this->pdo->update($sensor::TABLE_NAME, $entity);
+            return $this->pdo->updateEntity($entity);
         } else {
             if ($sensor->id) {
                 return false;
             }
-            unset($entity['id']);
-            return $this->pdo->insert($sensor::TABLE_NAME, $entity);
+            return $this->pdo->insertEntity($entity);
         }
     }
 
@@ -45,7 +43,7 @@ class SensorDatabase
         if (!$sensor) {
             return false;
         }
-        SmartHome::sensorStorage()->set($sensor->uid, $value, $ts);
+        \App::sensorStorage()->set($sensor->uid, $value, $ts);
         if (is_null($sensor->history)) {
             return false;
         }

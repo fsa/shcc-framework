@@ -3,7 +3,7 @@
 namespace FSA\SmartHome\TTS;
 
 use FSA\SmartHome\DaemonInterface;
-use SmartHome;
+use App;
 
 class Daemon implements DaemonInterface
 {
@@ -27,7 +27,7 @@ class Daemon implements DaemonInterface
         $this->pre_sound = $params['pre_sound'];
         $this->pre_sound_period = $params['pre_sound_period'];
         $this->play_sound_cmd = $params['play_sound_cmd'];
-        $this->tts = SmartHome::tts();
+        $this->tts = App::tts();
     }
 
     public function getName()
